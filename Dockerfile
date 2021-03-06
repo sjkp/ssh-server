@@ -18,7 +18,7 @@ COPY sshd_config /etc/ssh/sshd_config
 
 EXPOSE 22
 
-ENTRYPOINT ["ssh-start"]
-CMD ["ssh-server"]
+ENTRYPOINT ["ssh-start.sh"]
+CMD ["ssh-server.sh"]
 
-COPY authorized_keys /root/.ssh/authorized_keys
+#COPY authorized_keys /root/.ssh/authorized_keys
